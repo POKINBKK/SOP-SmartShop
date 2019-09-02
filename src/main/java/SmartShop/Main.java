@@ -1,4 +1,4 @@
-package com.soplab.lecture;
+package SmartShop;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
@@ -17,6 +17,6 @@ public class Main {
 
     @RequestMapping("/")
     String home(){
-        return "Hello world!";
+        return "Hey This is \'BlockButter\' Video Rental Store";
     }
 }

@@ -1,14 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7233df08-c445-4df8-b3cf-86ae17b95d2c" name="Default Changelist" comment="" />
+    <list default="true" id="7233df08-c445-4df8-b3cf-86ae17b95d2c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SmartShop/MovieBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SmartShop/MovieFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SmartShop/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SmartShop/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SmartShop/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SmartShop/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SmartShop/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SmartShop/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/soplab/lecture/Main.class" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1QHH4zhWX6pe0wHFVON1nH5At2h" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -21,7 +44,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main (1)">
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SmartShop.Main" />
+      <module name="smartshop" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="SmartShop.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.soplab.lecture.Main" />
       <module name="smartshop" />
@@ -37,6 +73,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -53,5 +90,16 @@
       <updated>1567420414618</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
