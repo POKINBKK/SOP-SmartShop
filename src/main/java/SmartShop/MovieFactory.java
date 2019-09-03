@@ -24,4 +24,24 @@ public class MovieFactory {
         String json = gson.toJson(movieDB);
         return json;
     }
+
+    public String rentMovie(int movieId){
+        if(movieId <= amountOfMovie){
+            MovieBean currentMovie = movieDB.get(movieId);
+            currentMovie.decreaseStock();
+            return "RentMovie Complete";
+        } else {
+            return "RentMovie Incomplete insert movieId Correctly";
+        }
+    }
+
+    public String returnMovie(int movieId){
+        if(movieId <= amountOfMovie){
+            MovieBean currentMovie = movieDB.get(movieId);
+            currentMovie.IncreaseStock();
+            return "ReturnMovie Complete";
+        } else {
+            return "ReturnMovie Incomplete insert movieId Correctly";
+        }
+    }
 }
