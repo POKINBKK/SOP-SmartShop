@@ -4,12 +4,10 @@ import com.google.gson.Gson;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.sql.SQLOutput;
+import java.util.Map;
 
 
 @SpringBootApplication
@@ -48,8 +46,10 @@ public class Main {
         return movieFactory.returnMovie(id);
     }
 
-    @RequestMapping(value = "/add", method = RequestMethod.POST)
-    public String addMovie(){
-        return "add Method";
+    @GetMapping("/add")
+    @ResponseBody
+    public String addMovie(@RequestParam String movieName, int amountInStock, int dayToRent){
+        MovieBean newmovie = movieFactory.newMovie(movieName, amountInStock,dayToRent);
+        return "Add Movie Complete";
     }
 }
