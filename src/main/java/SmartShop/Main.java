@@ -1,6 +1,5 @@
 package SmartShop;
 
-import com.google.gson.Gson;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
@@ -13,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 public class Main {
 
     @Autowired
-    private MovieFactory movieFactory;
+    private MovieFactory movieFactory = MovieFactory.getInstance();
 
     public static void  main(String[] args){
         SpringApplication.run(Main.class, args);
@@ -26,14 +25,12 @@ public class Main {
 
     @RequestMapping(value = "/rent/{id}", method = RequestMethod.GET)
     public String rentMovie(@PathVariable int id){
-        return "rent";
-        //return movieFactory.rentMovie(id);
+        return movieFactory.rentMovie(id);
     }
 
     @RequestMapping(value = "/return/{id}", method = RequestMethod.GET)
     public String returnMovie(@PathVariable int id){
-        return "return";
-        //return movieFactory.returnMovie(id);
+        return movieFactory.returnMovie(id);
     }
 
     @RequestMapping(value = "/add", method = RequestMethod.POST)
