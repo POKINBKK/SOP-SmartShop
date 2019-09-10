@@ -1,47 +1,31 @@
 package SmartShop;
 
 import com.google.gson.Gson;
-
 import java.util.ArrayList;
 import java.util.List;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
+@Service
 public class MovieFactory {
-    private int amountOfMovie = 0;
-    List<MovieBean> movieDB = new ArrayList<MovieBean>();
-    public MovieBean newMovie(String movieName, int amountInStock, int dayToRent){
-        MovieBean movie = new MovieBean(this.amountOfMovie, movieName, amountInStock, dayToRent);
-        increaseAmountofMovie();
-        movieDB.add(movie);
-        return movie;
-    }
+    @Autowired
+    private MovieRepository movieRepository;
 
-    private void increaseAmountofMovie(){
-        this.amountOfMovie++;
+    public void newMovie(MovieBean movie){
+        movieRepository.save(movie);
     }
     
-    public String getAllMovie(){
+    public String showAllMovie(){
         Gson gson = new Gson();
-        String json = gson.toJson(movieDB);
+        String json = gson.toJson(movieRepository.findAll());
         return json;
     }
 
     public String rentMovie(int movieId){
-        if(movieId <= amountOfMovie){
-            MovieBean currentMovie = movieDB.get(movieId);
-            currentMovie.decreaseStock();
-            return "RentMovie Complete";
-        } else {
-            return "RentMovie Incomplete insert movieId Correctly";
-        }
+        return "rent func";
     }
 
     public String returnMovie(int movieId){
-        if(movieId <= amountOfMovie){
-            MovieBean currentMovie = movieDB.get(movieId);
-            currentMovie.IncreaseStock();
-            return "ReturnMovie Complete";
-        } else {
-            return "ReturnMovie Incomplete insert movieId Correctly";
-        }
+        return "return func";
     }
 }

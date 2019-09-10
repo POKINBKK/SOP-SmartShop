@@ -1,17 +1,20 @@
 package SmartShop;
 
-public class MovieBean implements java.io.Serializable {
-    private int movieId;
+import javax.persistence.*;
+
+@Entity
+public class MovieBean {
+
+    @Id @GeneratedValue(strategy=GenerationType.IDENTITY)
+    private int id;
     private String movieName;
     private int amountInStock;
     private int dayToRent;
 
     public MovieBean(){
-
     }
 
-    public MovieBean(int movieid, String moviename, int amountinstock, int daytorent){
-        this.movieId = movieid;
+    public MovieBean(String moviename, int amountinstock, int daytorent){
         this.movieName = moviename;
         this.amountInStock = amountinstock;
         this.dayToRent = daytorent;
@@ -42,23 +45,11 @@ public class MovieBean implements java.io.Serializable {
     }
 
     public int getMovieId() {
-        return movieId;
+        return id;
     }
 
     public void setMovieId(int movieId) {
-        this.movieId = movieId;
+        this.id = movieId;
     }
 
-    public boolean decreaseStock(){
-        if(this.amountInStock == 0){
-            return false;
-        } else {
-            this.amountInStock--;
-            return true;
-        }
-    }
-
-    public void IncreaseStock(){
-        this.amountInStock++;
-    }
 }
