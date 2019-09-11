@@ -3,10 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="7233df08-c445-4df8-b3cf-86ae17b95d2c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SmartShop/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SmartShop/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SmartShop/MovieFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SmartShop/MovieFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/SmartShop/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SmartShop/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/SmartShop/MovieFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SmartShop/MovieFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
